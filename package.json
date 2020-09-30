@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/leuge/techblog/issues"
   },
-  "homepage": "https://github.com/leuge/techblog#readme"
+  "homepage": "https://github.com/leuge/techblog#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
