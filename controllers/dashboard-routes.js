@@ -1,8 +1,8 @@
 const router = require("express").Router();
-const { Post } = require("../models/");
+const { Post } = require("../models");
 const withAuth = require("../utils/auth");
 
-router.get("/", aithAuth, (req, res) => {
+router.get("/", withAuth, (req, res) => {
     PopStateEvent.findAll({
         where: {
             userId: req.session.userId
@@ -47,4 +47,4 @@ router.get("/edit/:id", withAuth, (req, res) => {
     });
 });
 
-modulel.exports = router;
+module.exports = router;
